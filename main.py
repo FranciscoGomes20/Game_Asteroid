@@ -4,8 +4,8 @@ from player import Player
 from asteroid import Asteroid
 from shot import Shot
 
-ALTURA = 840    # Altura da tela/background
-LARGURA = 480   # Largura da tela/background
+ALTURA = 840    # Altura da tela/imgem background
+LARGURA = 480   # Largura da tela/imagem background
 
 # Inicio
 pygame.init()
@@ -62,6 +62,7 @@ def main():
                         pygame.mixer.music.play(-1)
                         somAtivado = True
         
+        # Tempo para a criação dos asteroides
         if not gameover:
             timer += 1
             if timer > 30:
